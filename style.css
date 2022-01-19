@@ -1,0 +1,80 @@
+:root {
+  --white: #fff;
+  --black: #000000;
+  --blue: #0004e6;
+  --light-blue: #ff9494;
+  --color-primary: #9d68ff;
+  --color-sec: #fd72a7;
+  --grey: rgb(218, 218, 218);
+  --dark-grey: #757575;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div {
+  width: 40rem;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 40px;
+}
+
+.counter-div > * {
+  margin-bottom: 2rem;
+}
+
+#stopwatch {
+  font-size: 4rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button.stop {
+  background-color: rgb(108, 221, 255);
+}
+button.reset {
+  background-color: var(--white);
+  color: var(--black);
+}
+button.start {
+  background-color: rgb(117, 255, 175);
+  color: #242424;
+}
